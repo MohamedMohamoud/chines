@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    overflow-x: hidden;
+    /* background: rgb(83, 20, 20); */
+
+}
+.moon{
+    margin: auto;
+    position: absolute;
+    margin-bottom: 485px;
+    font-size: 65px;
+    color: #e2ede2;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 3px;
+    background: #7d2ae8;
+    
+}
+.container{
+    width: 2550px;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./5.jpg);
+   
+   
+}
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid rgb(25, 24, 24);
+   
+}
+.card{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 20px 0;
+    width: 280px;
+    margin-right: 34px;
+  
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    background: #7d2ae8;
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+.container .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+.card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icons i{
+    margin-top: 10px;
+    color: #fff;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    cursor: pointer;
+}
+.card .media-icons i:hover{
+   opacity: 1;
+   color: rgba(197, 128, 240, 0.826);
+}
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+
+}
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.name-profession .profession{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+
+}
+.card .rating i{
+    color: #7d2ae8;
+    font-size: 18px;
+    margin: 0 2px;
+
+
+}
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.card .button button {
+    background: #7d2ae8;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ;
+    -webkit-transition: all 0.3s ease ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    cursor: pointer;
+}
+.button button:hover{
+    background: #6616d0;
+}
+
+
+
+@media  (max-width:885px){
+    .moon {
+        font-size: 25px;
+    }
+
+}
+
+@media  (max-width:768px){
+    .moon {
+        font-size: 23px;
+    }
+}
+@media  (max-width:575px){
+    .container .moon{
+        font-size: 10px;
+        margin-top: -228px;
+        margin-left: 29px;
+    
+    }
+    .container .content {
+        margin-right: -290px;
+        display: flow-root;
+        margin-top: 5px;
+        width: 538px;
+    }
+    .card {
+        width: 260px;
+    }
+}
+@media  (max-width:375px){
+    .container .moon {
+        font-size: 11px;
+        margin-top: -100px;
+        margin-left: 31px;
+    
+    }
+    .container .content {
+        margin-right: -277px;
+        display: flow-root;
+        margin-top: 33px;
+        width: 542px;
+    }
+
+}
